@@ -19,7 +19,7 @@ from alloptions.examplestr import example_razmnozenie
 import os
 import re
 from tkinter import Frame,Tk,StringVar,Message,Button,filedialog,Entry,LabelFrame,Text,END,BOTTOM,LEFT,RIGHT,N,Y,Scrollbar,WORD,PhotoImage,Label,S
-
+import platform
 
 #КНОПКА ОБЗОР ФАЙЛ С ПЕРЕМЕННЫМИ ДЛЯ ЗАМЕНЫ
 def browse_button():
@@ -74,7 +74,14 @@ def allstart():
     if len(file_path2) < 1:
         errorwindow = 'НЕ УКАЗАН ФАЙЛ ЗАГОТОВКА'
         print('НЕ УКАЗАН ФАЙЛ ЗАГОТОВКА')
-    else:      
+    else:
+        #ОПРЕДЕЛЯЕМ ОПЕРАЦИОННУЮ СИСТЕМУ
+        whyplatforms = platform.system()
+        #ЕСЛИ WIN ДОБАВЛЯЕМ В КОНЕЦ ФАЙЛОВ /n - WINDOWS OS
+        if whyplatforms == 'Windows':
+            allfunc.writefile(file_path,'a','\n')
+            allfunc.writefile(file_path2,'a','\n')
+            
         for i in range(allfunc.skolstrok(file_path)):
             #ОТКРЫВАЕМ ФАЙЛ С ПЕРМЕННЫМИ ДЛЯ ЗАМЕНЫ И БЕРЕМ СТРОКУ
             strone = allfunc.getnlinefromfile(file_path,1)
@@ -88,6 +95,7 @@ def allstart():
 def labelupgrade5():
     pathlabel5.config(text=errorwindow)
     window.after(100, labelupgrade5)
+
 
 
 window = Tk()

@@ -3,7 +3,7 @@
 ​
 Скрипт берет первую строчку из файла 1.txt, открывает  файл2.txt и заменяет там переменную, потом все объединяет в общий файл.
 ​
-![felico](https://github.com/gubkin-utility/felico/blob/master/screenshot.jpg?raw=true "felico")
+![felico](https://github.com/gubkin-utility/felico/blob/master/scr/screenshot.jpg?raw=true "felico")
 ​
 ### пример:
 **file1.txt:**
@@ -18,7 +18,7 @@ CCCCC
 44444 *  
 55555 *  
 ​
-**Результат: final.txt**
+**Результат: final.txt**  
 11111 AAAAA  
 22222 AAAAA  
 33333 AAAAA  

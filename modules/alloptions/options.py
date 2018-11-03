@@ -11,4 +11,4 @@ FELICO Mass Text File Editor V1
 """
 
 #ПАПКА РАБОЧЕЙ ДИРЕКТОРИИ
-startworkdir = '/'
+startworkdir = '/home/zanettii/files-leoplus/felico_mass_text_editor/'
