@@ -6,12 +6,12 @@
 ![felico](https://github.com/gubkin-utility/felico/blob/master/scr/screenshot.jpg?raw=true "felico")
 ​
 ### пример:
-**file1.txt:**
+**file1.txt:**  
 AAAAA  
 BBBBB  
 CCCCC  
 ​
-**file2.txt:**
+**file2.txt:**  
 11111 *  
 22222 *  
 33333 *  
