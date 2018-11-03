@@ -31,7 +31,7 @@ buttontext = 'brown'
 #ДЛИННА КНОПКИ
 buttonwidth = 19
 #ТЕКСТ ДЛЯ ФУТЕРА
-donandlic = 'test'
+donandlic = 'felico 2018'
 
 
 
